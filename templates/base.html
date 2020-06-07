@@ -1,0 +1,141 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Encender Nigeria Limited</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/font-awesome.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+	
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Candal&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+			<a class="navbar-brand" href="{% url 'home' %}">
+				<img src="{% static 'img/logo.png' %}">
+				<i><b>Encender Nigeria Limited</b></i>
+			</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mr-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link {% block nav_home %}{% endblock %}" href="{% url 'home' %}"><b>Home</b></a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link {% block nav_about %}{% endblock %}" href="{% url 'about' %}"><b>About</b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link {% block nav_services %}{% endblock %} dropdown-toggle" id="dropdown04"  href="{% url 'services' %}"><b>Services</b></a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04">
+                  <a class="dropdown-item" href="{% url 'services-single' %}#ref1">Mechanical and Structural Engineering</a>
+                  <a class="dropdown-item" href="{% url 'services-single' %}#ref2">Electrical Installation and Automation</a>
+                  <a class="dropdown-item" href="{% url 'services-single' %}#ref3">Asset Integrity</a>
+                  <a class="dropdown-item" href="{% url 'services-single' %}#ref4">Trainings</a>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link{% block nav_projects %}{% endblock %}" href="{% url 'projects' %}"><b>Projects</b></a>
+              </li>
+			   <li class="nav-item">
+                <a class="nav-link {% block nav_clients %}{% endblock %}" href="{% url 'clients' %}"><b>Clients</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {% block nav_contact %}{% endblock %}" href="{% url 'contact' %}"><b>Contact</b></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto cta-btn">
+              <li class="nav-item">
+                <marquee direction="right">
+                <a class="nav-link" href="{% url 'quote' %}">
+                  Get a Quote
+                </a>
+				</marquee>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    
+    {% block content %}
+	
+	{% endblock %}
+  
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{% static 'img/logo.png' %}" style="width:30px; height:30px;"><a href=""  style="margin-left:5px; font-size:15px">Encender Nigeria Limited</a>
+			<p style="margin-top:5px; margin-bottom:10px; color:black;">We are Encender Nigeria limited, We Provide Engineering Procurements and Asset Integrity.</p>
+			<p class='web-links'><b><a href=""> Terms of Use </a> | <a href=""> Privacy Policy </a> | <a href=""> Webmail </a></b></p>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled footer-link">
+              <li class="d-flex"><span class="mr-3">Address:</span><span class="text-black">Plot 9/11 Redemtion Drive,<br>
+				Off Woji mini-otudor(culvert),<br> 
+				Portharcourt, Rivers State, Nigeria.</span></li>
+              <li class="d-flex"><span class="mr-3">Telephone:</span><span class="text-black">+2348167283322</span></li>
+              <li class="d-flex"><span class="mr-3">Email:</span><span class="text-black">info@encender.com<br>promise@encender.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+		  <div class="col-md-3">
+			<h3>Social</h3>
+            <ul class="list-unstyled footer-link d-flex footer-social">
+              <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
+              <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+           <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by <a href="https://melsinc.com" target="_blank">Mels Inc</a></p>
+         </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff0000"/></svg></div>
+
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

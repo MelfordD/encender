@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block nav_about %}
+	active
+{% endblock %}
+{% block content %} 
+    <section class="home-slider  inner-page owl-carousel">
+      <div class="slider-item" style="background-image: url({% static 'img/img_slider-3.jpg' %});">
+        
+        <div class="about-us">
+          <h1 style="color:white;"><b>About Us</b></h1>
+		  <p>We are Encender Nigeria limited, We Provide Engineering Procurements and Asset Integrity.</p>
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- END slider -->
+    
+    <section class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 order-lg-3 mb-5">
+            <img src="{% static 'img/slider-1.jpg' %}" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-md-1 order-lg-2"></div>
+          <div class="col-md-5 order-lg-1">
+            <ul class="list-unstyled check">
+				<h2>Our Aim</h2>
+              <li>We aim at giving clients excellent customer satisfaction <br>with
+				international best practices and standard in view.</li>
+              <li></li>
+              <li>ENCENDER ensures that Our integrity projects are finished on time  with a Zero accident record. </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-md-6 order-lg-1 mb-5">
+            <img src="{% static 'img/slider-2.jpg' %}" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-md-1 order-lg-2"></div>
+          <div class="col-md-5 order-lg-3">
+            <h2 class="text-uppercase heading mb-4">Mission</h2>
+            <p class="mb-3">In ENCENDER, we believe that asset integrity is a primary tool for optimizing production, 
+					as this will in turn boost effective health and safety as well minimise environmental degradation.</p>
+
+            <ul class="list-unstyled check">
+              <li> ENCENDER is intentional towards achieving excellence at providing Integrity solutions. </li>
+              <li> We see to it that every project meets it’s project finish time line. We ensure that all planning,
+				procurement and necessary logistics to finish project are in line with the project schedule</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="section border-t">
+      <div class="container">
+        <div class="row justify-content-center mb-5 element-animate">
+          <div class="col-md-8 text-center mb-5">
+            <h2 class="text-uppercase heading border-bottom mb-4">Vision</h2>
+            <p class="mb-0 lead">ENCENDER aspires to lead Asset Integrity solutions in Africa
+				with cutting edge technologies that inspires excellence and productivity..</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 element-animate">
+            <div class="media d-block media-testimonial text-center">
+              <div class="media-body">
+                <blockquote>
+                  <p>&ldquo;we work with a team mind-set. Work is only positive when every one has contributed effectively to it. Excellent Job delivery and Satisfaction with one spirit.&rdquo;</p>  
+                </blockquote>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 element-animate">
+            <div class="media d-block media-testimonial text-center">
+              <div class="media-body">
+                <blockquote>
+                  <p>&ldquo;every project is done with trust. We celebrate our core attitude of integrity to client. Every Client and Staff is given a pay check of integrity as they work with us.&rdquo;</p>  
+                </blockquote>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

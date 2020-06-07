@@ -1,0 +1,1 @@
+web: gunicorn encender.wsgi --log-file -
