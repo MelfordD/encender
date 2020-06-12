@@ -85,7 +85,8 @@ header .navbar-brand {
   letter-spacing: .0.5em;
   font-weight: 400;
   margin-left: 10px;
-  font-size: 15px
+  font-size: 15px;
+  padding: 0px;
 }
 
 header img{
@@ -106,7 +107,26 @@ header img{
 
 @media (max-width: 1190px) {
 	header .navbar .navbar-brand {
+		padding: 0px;
+	}
+	
+	header .navbar .logo{
+		padding-right: 0px !important;
+		margin-left: 0px !important;
+		width: 70%;
+		 
+		
+	}
+}
 
+@media (max-width: 500px){
+	header .navbar .logo .l-text{
+		display: none;
+	}
+	
+	header img{
+	width: 10%;
+	height: 10%;
 	}
 }
 
