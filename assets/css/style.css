@@ -128,6 +128,9 @@ header img{
 	width: 10%;
 	height: 10%;
 	}
+	
+	
+	
 }
 
 header .navbar-brand span {
@@ -186,6 +189,10 @@ header .top-bar .social li a {
     padding-right: 10px;
     width: inherit;
   }
+  
+	.abb1{
+		margin-top: -300px;
+	}
 }
 
 header .top-bar .social li a:hover {
@@ -224,6 +231,10 @@ header .navbar .nav-link {
 @media (max-width: 1199px) {
   header .navbar .nav-link {
     padding: .5rem 0rem;
+  }
+  
+  .ab-text{
+	margin-top: -200px;
   }
   
 }
@@ -426,15 +437,30 @@ header .navbar .cta-btn a:hover {
 
 .owl-carousel.home-slider .slider-item .about-us{
 	float: left;
-	color: white;
 	padding:250px 100px;
+	margin: 100px -10px;
 	 
+}
+
+.owl-carousel.home-slider .slider-item .about-us1{
+	float: left;
+	padding: 250px 100px;
+	margin: -200px -5px;
+	
 }
 
 
 @media (max-width: 991px) {
   .owl-carousel.home-slider .slider-item .slider-text h1 {
     font-size: 50px;
+  }
+  
+  .img11{
+	display: none;
+	border: 1px solid white;
+	width: 0%;
+	height: -0.5%;
+	
   }
 }
 
@@ -550,6 +576,62 @@ header .navbar .cta-btn a:hover {
   text-align: center;
   display: inline-block;
 }
+
+.ab-text{
+	margin-top: -200px;
+}
+
+.abb{
+	margin-top: -300px;
+}
+
+.ab{
+	margin-left: 15px;
+}
+
+.check1{
+	color: black;
+	list-style: none;
+}
+
+.check2{
+	color: black;
+	content: "-";
+}
+
+.listy ul{
+	margin-bottom:5px;
+}
+
+.outter-grid{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 2bx;
+}
+
+
+.inner-grid{
+	flex: 25%;
+	max-width: 100%;
+	padding: 0 2px;
+}
+
+.inner-grid img{
+	margin-top: 1px;
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+
+.img11{
+  
+}
+
+.img-fluid1{
+	width: 100%;
+	height: auto;
+}
+
 
 .section {
   padding: 7em 0;
@@ -736,7 +818,7 @@ header .navbar .cta-btn a:hover {
   color: #ff0000;
   left: 0;
   font-family: "ubuntu";
-  content: "\f122";
+  content: "-";
   position: absolute;
 }
 
