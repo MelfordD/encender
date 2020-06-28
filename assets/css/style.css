@@ -606,12 +606,12 @@ header .navbar .cta-btn a:hover {
 .outter-grid{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 2bx;
+	padding: 0 2px;
 }
 
 
 .inner-grid{
-	flex: 25%;
+	flex: 50%;
 	max-width: 100%;
 	padding: 0 2px;
 }
